@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( SimpleUvcViewer )
+find_package( OpenCV REQUIRED )
+list(APPEND CMAKE_CXX_FLAGS "-pthread -std=c++11 ${CMAKE_CXX_FLAGS}")
+add_executable( SimpleUvcViewer SimpleUvcViewer.cpp )
+target_link_libraries( SimpleUvcViewer ${OpenCV_LIBS} )
