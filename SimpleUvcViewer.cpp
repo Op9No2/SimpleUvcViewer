@@ -24,9 +24,12 @@ void printUsage(char** argv)
 {
 	cout <<
 		"\n"
-		"Usage :\n" << argv[0] << " your UVC device ID\n"
+		"Usage :\n" << argv[0] << " your UVC device ID\n\n"
 		"\n"
-		"Example usage :\n" << argv[0] << " 0-9\n";
+		"Example usage :\n" << argv[0] << " 0-9\n\n"
+		"Keyboard function :\n"
+		"'s' Save current frame to cap.jpg\n"
+		"'q' Quit";
 }
 
 int main(int argc, char *argv[])
@@ -82,7 +85,7 @@ int main(int argc, char *argv[])
 		cv::imshow(strUvcWindowName, inFrame);
 		char key = cv::waitKey(2);
 		if (key == 's') {
-			cv::imwrite("cap.jpg", frames.front());
+			cv::imwrite("cap.jpg", inFrame);
 		}else if (key == 'q') {
 			break;
 		}
