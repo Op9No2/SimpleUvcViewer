@@ -4,7 +4,7 @@
 #include <iostream>
 
 // opencv 
-#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/highgui.hpp>
 
 // list
 #include <list>
@@ -35,7 +35,7 @@ std::string GenFileNameByTime(void)
 	struct  tm tm = *localtime(&T);
 
 	// time string + ".jpg"
-	sprintf_s(file_name, sizeof(file_name) / sizeof(char), "%04d%02d%02d%02d%02d%02d.jpg", \
+	sprintf(file_name, "%04d%02d%02d%02d%02d%02d.jpg", \
 		tm.tm_year + 1900, tm.tm_mday, tm.tm_mon + 1, tm.tm_hour, tm.tm_min, tm.tm_sec);
 	
 	return file_name;
