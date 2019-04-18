@@ -24,7 +24,7 @@ $ make
 % cd SimpleUvcViewer/
 % mkdir build
 % cd build/
-% cmake -G"Visual Studio 15" .. -DCMAKE_BUILD_TYPE=RELEASE -DOpenCV_LIBS="your opencv folder" -DOpenCV_DIR="your opencv folder"
+% cmake -G "Visual Studio 15" .. -DCMAKE_BUILD_TYPE=RELEASE -DOpenCV_LIBS="your opencv folder" -DOpenCV_DIR="your opencv folder"
 % open SimpleUvcViewer.sln by Visual studio
 % Build -> Build Solution
 ```
@@ -39,3 +39,7 @@ $ ./SimpleUvcViewer --help
 ```bash
 % SimpleUvcViewer.exe --help
 ```
+
+## License
+
+See the [LICENSE](https://github.com/Op9No2/SimpleUvcViewer/blob/master/LICENSE) file.
