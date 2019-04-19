@@ -53,7 +53,7 @@ void printUsage(char** argv)
 		"      UVC frame width \n"
 		"  --h\n"
 		"      UVC frame height \n"
-		"\nExample usage :\n" << argv[0] << " -d 0 -w 1280 -h 720\n\n"
+		"\nExample usage :\n" << argv[0] << " --d 0 --w 1280 --h 720\n\n"
 		"Keyboard function:\n"
 		"'s' Save current frame to jpg format\n"
 		"'q' Quit"
